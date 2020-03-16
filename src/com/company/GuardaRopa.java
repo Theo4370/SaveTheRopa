@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -6,31 +7,25 @@ import java.util.Map;
 
 public class GuardaRopa {
 
-private  Map<Integer, String> listaDePrendas = new HashMap<>();
-private Integer contador;
+    private Map<Integer, List<Prenda>> prendas;
+    private Integer contador;
 
-    public Map<Integer, String> getListaDePrendas() {
-        return listaDePrendas;
-    }
-
-    public Integer getContador() {
-        return contador;
-    }
-
-    public GuardaRopa(Map<Integer, String> listaDePrendas) {
-        this.listaDePrendas = listaDePrendas;
-        this.contador = contador;
+    public GuardaRopa() {
+        this.prendas = new HashMap<>();
+        this.contador = 0;
     }
 
     public Integer guardarPrendas(List<Prenda> listaDePrendas) {
-        for (Integer identificador: listaDePrendas.size()) {
-listaDePrendas.get(1);
-
+        Integer identificador = contador;
+        for (Integer i = 1; i < listaDePrendas.size(); i++) {
+            prendas.put(i, listaDePrendas);
+            return contador;
         }
+        System.out.println("El numero de prenda es " + identificador);
 
+        return identificador;
 
     }
-
 
 
 }
