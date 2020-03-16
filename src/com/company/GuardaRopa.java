@@ -17,15 +17,20 @@ public class GuardaRopa {
 
     public Integer guardarPrendas(List<Prenda> listaDePrendas) {
         Integer identificador = contador;
-        for (Integer i = 1; i < listaDePrendas.size(); i++) {
-            prendas.put(i, listaDePrendas);
-            return contador;
+        for (Integer i = 1; i <= listaDePrendas.size(); i++) {
+            identificador = i;
+            prendas.put(identificador, listaDePrendas);
+            System.out.println("Se guardó la prenda con identificador " + identificador);
         }
-        System.out.println("El numero de prenda es " + identificador);
-
         return identificador;
-
     }
 
+    public void mostrarPrendas() {
+        System.out.println("Prendas guardadas:");
+        for (Integer i : prendas.keySet()) {
+            System.out.println(i + "-" + prendas.get(i));
+
+        }
+    }
 
 }
