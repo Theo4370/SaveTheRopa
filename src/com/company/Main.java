@@ -11,7 +11,7 @@ public class Main {
         // write your code here
         Prenda unaPrenda = new Prenda("alguna marca", "medias");
         Prenda otraPrenda = new Prenda("otra marca", "remera");
-        Prenda otraMas = new Prenda("alguna marca", "buzo");
+        Prenda otraMas = new Prenda("alguna otra marca", "buzo");
 
         GuardaRopa unGuardaRopa = new GuardaRopa();
         List<Prenda> listaDePrendas = new ArrayList<>();

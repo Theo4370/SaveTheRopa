@@ -28,7 +28,7 @@ public class GuardaRopa {
     public void mostrarPrendas() {
         System.out.println("Prendas guardadas:");
         for (Integer i : prendas.keySet()) {
-            System.out.println(i + "-" + prendas.get(i));
+            System.out.println(i + "-" + prendas.get(i).toString());
 
         }
     }
